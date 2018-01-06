@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="quran_readers_name">
+    <item>@string/qari_abdulhakim_abdullatif</item>
+    <item>@string/qari_abdulrashid_sofi</item>
+    <item>@string/qari_fuad_alkhamiry</item>
+    <item>@string/qari_ziad_alhorani</item>
+  </string-array>
+
+  <integer-array name="quran_readers_have_gapless_equivalents" translatable="false">
+    <item>0</item>
+    <item>0</item>
+    <item>0</item>
+    <item>0</item>
+  </integer-array>
+
+  <string-array name="quran_readers_path" translatable="false">
+    <item>abdulhakim_abdullatif</item>
+    <item>abdulrashid_sofi</item>
+    <item>fuad_alkhamiry</item>
+    <item>ziad_alhorani</item>
+  </string-array>
+
+  <string-array name="quran_readers_db_name" translatable="false">
+    <item></item> <!-- abdulhakim abdullatif -->
+    <item></item> <!-- abdulrashid sofi -->
+    <item></item> <!-- fuad alkhamiry -->
+    <item>ziad_alhorani</item> <!-- ziad alhorani -->
+  </string-array>
+
+  <string-array name="quran_readers_urls" translatable="false">
+    <item>http://api.quraan.faith/shuba/audio/abdulhakim_abdullatif/</item>
+    <item>http://api.quraan.faith/shuba/audio/abdulrashid_sofi/</item>
+    <item>http://api.quraan.faith/shuba/audio/fuad_alkhamiry/</item>
+    <item>http://api.quraan.faith/shuba/audio/ziad_alhorani/</item>
+  </string-array>
+
+  <!-- actual qari names -->
+  <string name="qari_abdulhakim_abdullatif">Abdulhakim Abdullatif</string>
+  <string name="qari_abdulrashid_sofi">Abdulrashid Sofi</string>
+  <string name="qari_fuad_alkhamiry">Fuad Alkhamiry</string>
+  <string name="qari_ziad_alhorani">Ziad Alhorani</string>
+</resources>

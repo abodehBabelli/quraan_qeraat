@@ -58,6 +58,12 @@ android {
       versionCode 1100
       versionName "1.1.0"
     }
+
+    shuba {
+      applicationId "faith.quraan.quraanqeraat.shuba"
+      versionCode 1100
+      versionName "1.1.0"
+    }
   }
 
   buildTypes {
