@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'io.fabric'
-apply plugin: 'net.ltgt.errorprone'
+//apply plugin: 'net.ltgt.errorprone'
 
 android {
   compileSdkVersion 26
@@ -60,9 +60,9 @@ android {
     }
 
     shuba {
-      applicationId "faith.quraan.quraanqeraat.shuba"
-      versionCode 1100
-      versionName "1.1.0"
+      applicationId "faith.quraan.quraanqeraat.shuba.new"
+      versionCode 1140
+      versionName "1.1.4"
     }
   }
 
@@ -148,7 +148,7 @@ dependencies {
   androidTestImplementation "com.android.support.test.espresso:espresso-core:${espressoVersion}"
   androidTestImplementation "com.android.support.test.espresso:espresso-intents:${espressoVersion}"
   androidTestImplementation "com.android.support:support-annotations:${supportLibVersion}"
-  implementation('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+  implementation('com.crashlytics.sdk.android:crashlytics:2.9.7@aar') {
     transitive = true
   }
 }

@@ -23,5 +23,5 @@ public class QuranFileConstants {
   public static final String ARABIC_DATABASE = "quran.shuba.ar.db";
 
   // images version
-  public static final int IMAGES_VERSION = 3;
+  public static final int IMAGES_VERSION = 5;
 }

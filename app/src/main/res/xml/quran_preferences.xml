@@ -8,7 +8,7 @@
       android:title="@string/prefs_category_display_settings">
 
     <com.quran.labs.androidquran.ui.preference.QuranCheckBoxPreference
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:disableDependentsState="false"
         android:key="@string/prefs_use_arabic_names"
         android:persistent="true"

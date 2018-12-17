@@ -30,7 +30,7 @@ public class QuranApplication extends Application {
         .core(new CrashlyticsCore.Builder()
             .disabled(BuildConfig.DEBUG)
             .build())
-        .build());
+        .build(), new Crashlytics());
     Timber.plant(new RecordingLogTree());
     this.applicationComponent = initializeInjector();
   }

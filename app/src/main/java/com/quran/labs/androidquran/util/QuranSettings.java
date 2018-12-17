@@ -47,7 +47,7 @@ public class QuranSettings {
   }
 
   public boolean isArabicNames() {
-    return prefs.getBoolean(Constants.PREF_USE_ARABIC_NAMES, false);
+    return prefs.getBoolean(Constants.PREF_USE_ARABIC_NAMES, true);
   }
 
   public boolean isLockOrientation() {
