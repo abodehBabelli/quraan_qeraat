@@ -132,7 +132,7 @@ public class AudioService extends Service implements OnCompletionListener,
   // our media player
   private MediaPlayer player = null;
 
-  // are we playing an override file (basmalah/isti3atha)
+  // are we playing an override file (basmallah/isti3atha)
   private boolean playerOverride;
 
   // our AudioFocusHelper object, if it's available (it's available on SDK

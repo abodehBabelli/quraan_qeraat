@@ -199,7 +199,8 @@ public class AudioUtils {
     if (!TextUtils.isEmpty(baseDirectory)) {
       File f = new File(baseDirectory);
       if (f.exists()) {
-        String filename = 1 + File.separator + 1 + AUDIO_EXTENSION;
+        int basmallahAyahNumber = QuranInfo.IS_FIRST_AYAH_BASMALAH ? 1 : 0;
+        String filename = 1 + File.separator + basmallahAyahNumber + AUDIO_EXTENSION;
         f = new File(baseDirectory + File.separator + filename);
         if (f.exists()) {
           Timber.d("already have basmalla...");
@@ -242,7 +243,7 @@ public class AudioUtils {
       }
 
       for (int j = firstAyah; j < lastAyah; j++) {
-        if (j == 1 && i != 1 && i != 9) {
+        if (j == 1 && (!QuranInfo.IS_FIRST_AYAH_BASMALAH || i != 1) && i != 9) {
           Timber.d("need basmalla for %d:%d", i, j);
 
           return true;

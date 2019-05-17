@@ -249,4 +249,6 @@ public class QuranData{
       /* hizb 59 */  {78,   1}, {80,   1}, {82,   1}, { 84,   1},
       /* hizb 60 */  {87,   1}, {90,   1}, {94,   1}, {100,   9},
   };
+
+  public static boolean IS_FIRST_AYAH_BASMALAH = false;
 }

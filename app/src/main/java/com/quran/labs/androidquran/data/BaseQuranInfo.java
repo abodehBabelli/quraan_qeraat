@@ -24,6 +24,7 @@ public class BaseQuranInfo {
   public static int[] SURA_NUM_AYAHS = QuranData.SURA_NUM_AYAHS;
   public static boolean[] SURA_IS_MAKKI = QuranData.SURA_IS_MAKKI;
   public static int[][] QUARTERS = QuranData.QUARTERS;
+  public static boolean IS_FIRST_AYAH_BASMALAH = QuranData.IS_FIRST_AYAH_BASMALAH;
 
   /**
    * Get localized sura name from resources

@@ -5,11 +5,13 @@ import android.support.annotation.VisibleForTesting;
 import android.util.SparseArray;
 
 import com.crashlytics.android.Crashlytics;
+import com.quran.labs.androidquran.BuildConfig;
 import com.quran.labs.androidquran.common.LocalTranslation;
 import com.quran.labs.androidquran.dao.translation.Translation;
 import com.quran.labs.androidquran.dao.translation.TranslationItem;
 import com.quran.labs.androidquran.dao.translation.TranslationList;
 import com.quran.labs.androidquran.data.Constants;
+import com.quran.labs.androidquran.data.QuranFileConstants;
 import com.quran.labs.androidquran.database.DatabaseHandler;
 import com.quran.labs.androidquran.database.TranslationsDBAdapter;
 import com.quran.labs.androidquran.presenter.Presenter;
@@ -42,7 +44,7 @@ import timber.log.Timber;
 @Singleton
 public class TranslationManagerPresenter implements Presenter<TranslationManagerActivity> {
   private static final String WEB_SERVICE_ENDPOINT = "translations.json";
-  private static final String CACHED_RESPONSE_FILE_NAME = "translations.v6.cache";
+  private static final String CACHED_RESPONSE_FILE_NAME = "translations."+ BuildConfig.FLAVOR +".v1.cache";
 
   private final Context appContext;
   private final OkHttpClient okHttpClient;
@@ -57,7 +59,7 @@ public class TranslationManagerPresenter implements Presenter<TranslationManager
                               OkHttpClient okHttpClient,
                               QuranSettings quranSettings,
                               TranslationsDBAdapter dbAdapter) {
-    this.host = Constants.HOST;
+    this.host = QuranFileConstants.IMG_BASE_URL;
     this.appContext = appContext;
     this.okHttpClient = okHttpClient;
     this.quranSettings = quranSettings;

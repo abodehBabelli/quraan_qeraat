@@ -424,13 +424,14 @@ public class QuranDownloadService extends Service implements
 
     if (!isGapless) {
       // attempt to download basmallah if it doesn't exist
+      int basmallahAyahNumber = QuranInfo.IS_FIRST_AYAH_BASMALAH ? 1 : 0;
       String destDir = destination + File.separator + 1 + File.separator;
       new File(destDir).mkdirs();
-      File basmallah = new File(destDir, "1" + extension);
+      File basmallah = new File(destDir, basmallahAyahNumber + extension);
       if (!basmallah.exists()) {
         Timber.d("basmallah doesn't exist, downloading...");
-        String url = String.format(Locale.US, urlString, 1, 1);
-        String destFile = 1 + extension;
+        String url = String.format(Locale.US, urlString, 1, basmallahAyahNumber);
+        String destFile = basmallahAyahNumber + extension;
         result = downloadFileWrapper(url, destDir, destFile, details);
         if (!result) {
           return false;

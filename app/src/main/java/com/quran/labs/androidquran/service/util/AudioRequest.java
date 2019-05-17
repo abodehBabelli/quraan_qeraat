@@ -198,10 +198,12 @@ public abstract class AudioRequest implements Parcelable {
 
     int sura = currentSura;
     int ayah = currentAyah;
-    if (ayah == 1 && sura != 1 && sura != 9 && !justPlayedBasmallah) {
+    if (ayah == 1 &&
+        (!QuranInfo.IS_FIRST_AYAH_BASMALAH || sura != 1) &&
+        sura != 9 && !justPlayedBasmallah) {
       justPlayedBasmallah = true;
       sura = 1;
-      ayah = 1;
+      ayah = QuranInfo.IS_FIRST_AYAH_BASMALAH ? 1 : 0;
     } else {
       justPlayedBasmallah = false;
     }
@@ -236,7 +238,9 @@ public abstract class AudioRequest implements Parcelable {
     }
     if (!force && repeatInfo.shouldRepeat()) {
       repeatInfo.incrementRepeat();
-      if (currentAyah == 1 && currentSura != 1 && currentSura != 9) {
+      if (currentAyah == 1 &&
+          (!QuranInfo.IS_FIRST_AYAH_BASMALAH || currentSura != 1) &&
+          currentSura != 9) {
         justPlayedBasmallah = true;
       }
       return false;

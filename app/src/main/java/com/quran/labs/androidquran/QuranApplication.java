@@ -27,10 +27,12 @@ public class QuranApplication extends Application {
   public void onCreate() {
     super.onCreate();
     Fabric.with(this, new Crashlytics.Builder()
-        .core(new CrashlyticsCore.Builder()
-            .disabled(BuildConfig.DEBUG)
-            .build())
-        .build(), new Crashlytics());
+        .core(
+            new CrashlyticsCore.Builder()
+                .disabled(BuildConfig.DEBUG)
+                .build()
+        )
+        .build());
     Timber.plant(new RecordingLogTree());
     this.applicationComponent = initializeInjector();
   }
