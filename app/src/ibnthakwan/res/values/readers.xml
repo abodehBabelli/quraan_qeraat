@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="quran_readers_name">
+    <item>@string/qari_moftah_mohammad_alsaltani</item>
+    <!--<item>@string/qari_ziad_alhorani</item>-->
+  </string-array>
+
+  <integer-array name="quran_readers_have_gapless_equivalents" translatable="false">
+    <item>0</item> <!-- moftah mohammad alsaltani -->
+    <!--<item>0</item> &lt;!&ndash; ziad alhorani &ndash;&gt;-->
+  </integer-array>
+
+  <string-array name="quran_readers_path" translatable="false">
+    <item>moftah_mohammad_alsaltani</item>
+    <!--<item>ziad_alhorani</item>-->
+  </string-array>
+
+  <string-array name="quran_readers_db_name" translatable="false">
+    <item></item> <!-- moftah mohammad alsaltani -->
+    <!--<item>ziad_alhorani</item> &lt;!&ndash; ziad alhorani &ndash;&gt;-->
+  </string-array>
+
+  <string-array name="quran_readers_urls" translatable="false">
+    <item>http://api.quraan.faith/ibnthakwan/audio/moftah_mohammad_alsaltani/</item>
+    <!--<item>http://api.quraan.faith/ibnthakwan/audio/ziad_alhorani/</item>-->
+  </string-array>
+
+  <!-- actual qari names -->
+  <string name="qari_moftah_mohammad_alsaltani">Muftah Mohammad Assaltani</string>
+  <!--<string name="qari_ziad_alhorani">Ziad Alhorani</string>-->
+</resources>
